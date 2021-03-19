@@ -1,0 +1,200 @@
+/* PATRONES GLOBALES DE CSS COPYRIGHT- JAIR ALEXANDER BLANCO SANJUAN*/
+
+/* Tipografía Principal */
+h1, h2, h3, a, button { font-family: 'Montserrat', sans-serif; }
+
+/* Tipografía Secundaria */
+h4, h5, h6, p, form, input, select, option, div, span { font-family: 'Poppins', sans-serif; }
+
+/* Asignación de propiedad display: block; a etiquetas de estructura */
+header, main, section, footer, aside, figure, figcaption, nav, div { display: block; }
+
+/*quitar margen que traen margen po defecto varias equitas de html*/
+body, h1, h2, h3, p, h4, h5, h6, figure, img {margin: 0;}
+a:link, a:visited, a:active {text-decoration:none;}
+
+/* CSS Propio */
+
+/* Componente Botón WhatsApp flotante */
+aside#boton-wp { width:45px;   height:45px;  margin:0;   float:none;   position:fixed;   right:15px;  bottom:15px;
+z-index: 99998; }
+
+aside#boton-wp a {width:100%;  height:auto;   margin:0;  float:none;  position:relative;  display:block;
+background-color:#00bb2d;   border-radius:50%;    text-align:center;  padding:10px 0;  
+transition:all 0.3s ease-in;}
+
+aside#boton-wp a i {font-size:1.5em;  line-height:1em;  color:#fff;  transition:all 0.3s ease-in;  }
+
+aside#boton-wp a:hover {   background:#e5a504;  transition:all 0.3s ease-in; }
+aside#boton-wp a:hover i {  color:#000;  transition:all 0.3s ease-in; }
+
+
+/* Componente Menú Responsive */
+aside#menu-moviles { width: 290px; height: 100%; display: none; margin: 0; float: none; position: fixed; 
+right: -290px; top: 0; z-index: 99998; background: #000; }
+
+aside#menu-moviles a#abrir-menu { width: 35px; height: auto; margin: 0; float: none; position: absolute; 
+top: 25px; left: -35px; z-index:99996; display: block; text-decoration: none; color: #000; background: #e5a504; 
+font-weight: 600; font-size: 1em; line-height: 1em; text-align: center; padding: 10px 0; 
+border-radius: 5px 0 0 5px; transition: all 0.3s ease-in; }
+
+aside#menu-moviles a#abrir-menu:hover { background: #e5a504; transition: all 0.3s ease-in }
+
+aside#menu-moviles a#cerrar-menu { width: 35px; height: auto; margin: 0; float: none; position: absolute; 
+top: 25px; left: -35px; z-index:99996; display: none; text-decoration: none; color: #000; background: #e5a504; 
+font-weight: 600; font-size: 1em; line-height: 1em; text-align: center; padding: 10px 0; 
+border-radius: 5px 0 0 5px; transition: all 0.3s ease-in; }
+
+aside#menu-moviles a#cerrar-menu:hover { background: #e5a504; transition: all 0.3s ease-in; }
+
+aside#menu-moviles nav { width: 60%; height: auto; margin: 15% auto; float: none; position: relative; }
+aside#menu-moviles nav a { width: 100%; height: auto; display: block; margin: 0 auto; float: none; 
+position: relative; color: #fff; font-weight: 600; font-size: 1.25em; padding: 10px 0; text-decoration: none; 
+transition: all 0.3s ease-in; }
+
+aside#menu-moviles nav a:hover { color: #e5a504; transition: all 0.3s ease-in; }
+
+
+
+/* Componente Header con Logo y Menú*/
+
+
+
+header { width: 100%; margin: 0; float:none;  position:fixed;  left: 0; top: 0; z-index: 9998; 
+background: url('../img/2.jpg') no-repeat bottom center   fixed #111;  background-size:cover;}
+
+header.no-sticky{ height:500px;}
+header.sticky { height:110px;    }
+
+
+header article {width:1400px; height:90px; margin: 0 auto; float:none; position:relative; }
+
+header article figure {width:152px; height:60px; margin:0; float:left; position:relative; top:10px; }
+
+header article figure a {width:100%; height:auto; margin:0 auto;  float:none;  position:relative; 
+display: block; }
+
+header article figure a img {width:auto; height: 90px; margin: 0 auto; float: none; position: relative; 
+display: block; }
+
+header article nav { width: 308px; height: 40px; margin: 0; float: right; position: relative; top: 20px; }
+
+header article nav a { width: auto; height: auto; margin: 0 15px; float: left; position: relative; 
+text-decoration: none; color: #fff; font-weight: 700; font-size: 1em; line-height: 1em; text-align: 
+center; padding: 12px 0; border-bottom: solid 2px #e5a504; transition: all 0.3s ease-in; }
+
+header article nav a:hover { color: #e5a504; border-bottom: solid 2px #fff; font-size:1.03em; transition: all 0.3s ease-in; }
+
+
+
+
+
+/* Caja Main */
+main { width:100%;  height:auto;  margin:600px auto 0; float:none;  position:relative; }
+main.margin-200{ margin:300px auto 0;}
+main.margin-600{margin:500px auto 0;}
+
+main section#destacados{  width:100%; height:auto; margin:0 auto;  float: none;  position:relative; }
+
+main section#destacados nav{ width:900px;  height:auto;  margin:0 auto; float:none;  position:relative; 
+padding:40px 0}
+
+main section#destacados nav h6{ color:#e5a504; font-weight:800; font-size: 2em; 
+line-height: 1em; text-align: center;padding: 1px}
+
+main section#destacados nav p{color: #000; font-weight: 280; font-size: 0.9em; 
+line-height: 1.45em; text-align: center; padding: 0; letter-spacing: 0.01em; }
+
+main section#destacados nav a{ width:200px; height:200px;  margin:9px 9px auto;  float:none;  position:relative; 
+display:inline-block;  }
+
+main section#destacados nav h3{ font-weight:700;  font-size:0.8em; text-align:center;  padding: 0; 
+color:#212121;}
+
+main section#destacados nav a img{ width:200px;  height:200px;  margin:10px;  float:none;  position:relative;  
+display:block; }
+
+main section#destacados nav a:hover{  transition: all 0.3s ease-in;} 
+
+main section#destacados nav a:hover img { transform: scale(1.05);  transition: all 0.3s ease-in;}
+
+/*footer*/
+footer {width:100%; height:300px; margin:0 auto; position:relative;   
+background: url('../img/1.jpg') no-repeat bottom center   fixed #111;  background-size:cover; }  
+
+footer article {width:120px;  height:auto;  margin:0 auto;  float:none;  position:relative;}
+
+footer article div#superior-footer {width:100%;   height:200px;  margin:0 auto 30px;   float:none;  
+position:relative; }
+
+footer article div#superior-footer div.cajas-footer {width:230px;  height:200px;   margin:0 60px 0 0;   float:left;
+position: relative;  }
+
+footer article div#superior-footer div.cajas-footer img {width:auto;  height:80px;   margin:100px 10px; 
+display:block;  float:none;  position:relative; }
+
+/* componente botones redes sociales */
+footer article div#superior-footer div.cajas-footer a { width:50px;  height: auto;  float: none;  
+position:relative;  display: block;  text-align: right;   bottom: 155px;   font-size: 1.8em; margin:100px;  
+text-decoration:none;   color: #e5a504; transition: all 0.2s ease-in;
+}
+
+/* footer article div#superior-footer div.cajas-footer a:hover i{} */
+footer article div#superior-footer div.cajas-footer a:hover i  { color: #fff; 
+transition: all 0.2s ease-in;}
+
+
+
+
+
+
+
+
+/* Ajustes para Tablets */
+@media only screen and (max-width: 1199px){
+header article { width: 90%; }
+header article figure { margin: 0 auto; float: left;}
+header article nav { display: none; }
+
+
+aside#menu-moviles { display: block; z-index:9999;}
+
+main section#destacados  { height: auto; }
+main section#destacados nav { width: 80%; height:auto;}
+main section#destacados h6
+main section#destacados h3
+main section#destacados p { text-align: center; }
+main section#destacados p { margin: 0 auto; float: none; padding: 0 0 15px; }
+main section#destacados nav a { margin:9px 80px auto;  float:none; width: auto; }
+
+
+
+
+
+footer article { width: 80%; }
+footer article div#superior-footer { height:auto;}
+footer article div#superior-footer div.cajas-footer { height: auto; margin: 0 auto 60px; float: none; }
+
+footer article div#superior-footer div.cajas-footer img{display: block; top:100px;}
+footer article div#superior-footer div.cajas-footer a{bottom: 60px; }
+
+
+
+
+
+@media only screen and (max-width: 799px){
+    
+}
+
+/* Ajustes para Móviles Grandes */
+@media only screen and (max-width: 499px){
+    header article figure { margin: 0; float: left; }
+}
+
+/* Ajustes para Móviles Pequeños */
+@media only screen and (max-width: 399px){
+    
+}
+
+
+/*COPYRIGHT- JAIR ALEXANDER BLANCO SANJUAN*/
